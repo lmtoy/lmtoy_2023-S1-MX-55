@@ -41,6 +41,7 @@ pars1["3CR287.1"] = ""
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
+pars2["3CR123.0"] = "srdp=1 admit=0"
 pars2["3CR234.0"] = "srdp=1 admit=0"
 pars2["3CR287.1"] = "srdp=1 admit=0"
 
