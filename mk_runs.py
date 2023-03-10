@@ -25,6 +25,8 @@ on["3CR123.0"] = [ 106007, 106008, 106009, 106011, 106012, 106013, 106015, 10601
                    106017, 106019, 106020, 106021,                                 # feb 18
                    106163,]                                                        # feb 19
 
+on["3CR135.0"] = [ 106524, 106525, 106526, 106528, 106529, 106530, 106532, 106533,  # mar 8
+                   106534,]
 
 on["3CR234.0"] = [ 105304, 105305, 105306, 105308, 105309, 105310, 105312, 105313,
                    105314, 105316, 105317, 105318,                                  # 10-feb
@@ -38,12 +40,14 @@ on["3CR287.1"] = [ 105324, 105325, 105326, 105328, 105329, 105330, 105332, 10533
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
 pars1["3CR123.0"] = ""   # strong continuum
+pars1["3CR135.0"] = ""
 pars1["3CR234.0"] = ""   # ok
 pars1["3CR287.1"] = ""   # strong continuum
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
 pars2["3CR123.0"] = "srdp=1 admit=0"
+pars2["3CR135.0"] = "srdp=1 admit=0"
 pars2["3CR234.0"] = "srdp=1 admit=0"
 pars2["3CR287.1"] = "srdp=1 admit=0"
 
