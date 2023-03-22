@@ -42,7 +42,14 @@ on["3CR287.1"] = [ 105324, 105325, 105326, 105328, 105329, 105330, 105332, 10533
                    105334, 105336, 105337, 105338,]                                  # 10-feb
 
 on["3CR349.0"] = [ 106884, 106885, 106886, 106888, 106889, 106890, 106892,
-                   106893, 106894,]                                                 # mar 11/12
+                   106893, 106894,                                                 # mar 11/12
+                   106974, 106975, 106976, 106979, 106980, 106981,]                # mar 21
+
+on["3CR357.0"] =  [ 106984, 106985, 106986, 106989, 106990, 106991,]               # mar 21
+
+on["3CR401.0"] =  [ 106994, 106995, 106996, 106999, 107000, 107001,]               # mar 21
+
+
 
 
 #        common parameters per source on the first dryrun (run1a, run2a)
@@ -54,6 +61,8 @@ pars1["3CR234.0"] = ""   # ok
 pars1["3CR236.0"] = ""  
 pars1["3CR287.1"] = ""   # strong continuum
 pars1["3CR349.0"] = ""
+pars1["3CR357.0"] = ""
+pars1["3CR401.0"] = ""
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
@@ -64,6 +73,8 @@ pars2["3CR234.0"] = "srdp=1 admit=0"
 pars2["3CR236.0"] = "srdp=1 admit=0"
 pars2["3CR287.1"] = "srdp=1 admit=0"
 pars2["3CR349.0"] = "srdp=1 admit=0"
+pars2["3CR357.0"] = "srdp=1 admit=0"
+pars2["3CR401.0"] = "srdp=1 admit=0"
 
 
 runs.mk_runs(project, on, pars1, pars2)
