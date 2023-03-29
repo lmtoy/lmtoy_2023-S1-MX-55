@@ -58,15 +58,15 @@ on["3CR401.0"] =  [ 106994, 106995, 106996, 106999, 107000, 107001,             
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1["3CR123.0"] = ""   # strong continuum
-pars1["3CR135.0"] = ""
-pars1["3CR219.0"] = ""
+pars1["3CR123.0"] = "shortlags=32,15.0"   # strong continuum
+pars1["3CR135.0"] = ""   # ok
+pars1["3CR219.0"] = ""   # ok
 pars1["3CR234.0"] = ""   # ok
-pars1["3CR236.0"] = ""  
-pars1["3CR287.1"] = ""   # strong continuum
-pars1["3CR349.0"] = ""
-pars1["3CR357.0"] = ""
-pars1["3CR401.0"] = ""
+pars1["3CR236.0"] = "shortlags=32,15.0"   # strong continuum
+pars1["3CR287.1"] = "shortlags=32,15.0"   # strong continuum [bench 105323-105325]
+pars1["3CR349.0"] = ""   # ok
+pars1["3CR357.0"] = ""   # ok
+pars1["3CR401.0"] = ""   # ok
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
