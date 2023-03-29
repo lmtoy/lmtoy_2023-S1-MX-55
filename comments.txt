@@ -1,1 +1,4 @@
 #  <obsnum>   <comment>     # <SLpipeline args>
+106007  strong continuum
+106727  strong continuum
+105324  strong continuum
