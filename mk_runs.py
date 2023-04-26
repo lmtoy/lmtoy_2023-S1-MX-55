@@ -1,28 +1,18 @@
 #! /usr/bin/env python
 #
-#   script generator for project="2021-S1-US-3"
-#
-#   lmtinfo.py grep US-3 Science Map | awk '{print $2}' | sort
-
+# 2023-S1-MX-55 covering spring 2023
 
 import os
 import sys
 
-# in prep of the new lmtoy module
-try:
-    lmtoy = os.environ['LMTOY']
-    sys.path.append(lmtoy)
-    from lmtoy import runs
-except:
-    print("No LMTOY with runs.py")
-    sys.exit(0)
+from lmtoy import runs
 
 project="2023-S1-MX-55"
 
 #        obsnums per source (make it negative if not added to the final combination)
 on = {}
 on["3CR123.0"] = [ 106007, 106008, 106009, 106011, 106012, 106013, 106015, 106016,
-                   106017, 106019, 106020, 106021,                                 # feb 18
+                   106017, 106019, 106020, 106021,                                 # feb 18 
                    106163,]                                                        # feb 19
 
 on["3CR135.0"] = [ 106524, 106525, 106526, 106528, 106529, 106530, 106532, 106533,  # mar 8
@@ -56,12 +46,15 @@ on["3CR357.0"] =  [ 106984, 106985, 106986, 106989, 106990, 106991,             
                     107126, 107127, 107128, 107131, 107132, 107133, 107136,]      # mar 22
 
 on["3CR381.0"] =  [ 107445, 107446, 107447, 107449, 107450, 107451, 107454,
-                    107455, 107456, 107458, 107459, 107460,]                      # mar 28
+                    107455, 107456, 107458, 107459, 107460,                       # mar 28
+                    108844, 108845, 108846, 108848, 108849, 108850,]              # apr 26
 
 
 on["3CR401.0"] =  [ 106994, 106995, 106996, 106999, 107000, 107001,               # mar 21
                     107139, 107140, 107141, 107144, 107145, 107146, 107149,]      # mar 22
 
+on["3CR436.0"] =  [ 108865, 108866, 108867, 108869, 108870, 108871, 108873,
+                    108874, 108875,]                                              # apr 26
 
 
 
@@ -79,6 +72,7 @@ pars1["3CR349.0"] = ""   # ok
 pars1["3CR357.0"] = ""   # ok
 pars1["3CR381.0"] = ""   # ok
 pars1["3CR401.0"] = ""   # ok
+pars1["3CR436.0"] = ""
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
@@ -94,6 +88,8 @@ pars2["3CR349.0"] = "srdp=1 admit=0"
 pars2["3CR357.0"] = "srdp=1 admit=0"
 pars2["3CR381.0"] = "srdp=1 admit=0"
 pars2["3CR401.0"] = "srdp=1 admit=0"
+pars2["3CR436.0"] = "srdp=1 admit=0"
 
+# Found 13 sources
 
 runs.mk_runs(project, on, pars1, pars2)
