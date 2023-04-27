@@ -38,6 +38,9 @@ on["3CR303.0"] = [ 107409, 107410, 107411, 107413, 107414, 107415, 107417, 10741
 on["3CR319.0"] =  [ 107427, 107428, 107429, 107431, 107432, 107433, 107436, 107437,
                     107438, 107440, 107441, 107442,]                                # mar 28
 
+on["3CR332.0"] =  [ 108952, 108953, 108954, 108956, 108957, 108958, 108960, 108961,
+                    108962, 108965, 108966, 108967,]                               # apr 27
+
 on["3CR349.0"] = [ 106884, 106885, 106886, 106888, 106889, 106890, 106892,
                    106893, 106894,                                                 # mar 11/12
                    106974, 106975, 106976, 106979, 106980, 106981,]                # mar 21
@@ -68,6 +71,7 @@ pars1["3CR236.0"] = "shortlags=32,15.0"   # strong continuum
 pars1["3CR287.1"] = "shortlags=32,15.0"   # strong continuum [bench 105323-105325]
 pars1["3CR303.0"] = "shortlags=32,15.0"   # strong continuum
 pars1["3CR319.0"] = ""   # ok
+pars1["3CR332.0"] = ""
 pars1["3CR349.0"] = ""   # ok
 pars1["3CR357.0"] = ""   # ok
 pars1["3CR381.0"] = ""   # ok
@@ -84,12 +88,13 @@ pars2["3CR236.0"] = "srdp=1 admit=0"
 pars2["3CR287.1"] = "srdp=1 admit=0"
 pars2["3CR303.0"] = "srdp=1 admit=0"
 pars2["3CR319.0"] = "srdp=1 admit=0"
+pars2["3CR332.0"] = "srdp=1 admit=0"
 pars2["3CR349.0"] = "srdp=1 admit=0"
 pars2["3CR357.0"] = "srdp=1 admit=0"
 pars2["3CR381.0"] = "srdp=1 admit=0"
 pars2["3CR401.0"] = "srdp=1 admit=0"
 pars2["3CR436.0"] = "srdp=1 admit=0"
 
-# Found 13 sources
+# Found 14 sources
 
 runs.mk_runs(project, on, pars1, pars2)
