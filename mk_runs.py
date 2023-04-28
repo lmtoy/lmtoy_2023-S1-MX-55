@@ -57,7 +57,11 @@ on["3CR401.0"] =  [ 106994, 106995, 106996, 106999, 107000, 107001,             
                     107139, 107140, 107141, 107144, 107145, 107146, 107149,]      # mar 22
 
 on["3CR436.0"] =  [ 108865, 108866, 108867, 108869, 108870, 108871, 108873,
-                    108874, 108875,]                                              # apr 26
+                    108874, 108875,                                               # apr 26
+                    109084, 109085, 109086,]                                      # apr 28
+
+on["3CR459.0"] =  [ 109093, 109094, 109095,]                                      # apr 28
+
 
 
 
@@ -77,6 +81,7 @@ pars1["3CR357.0"] = ""   # ok
 pars1["3CR381.0"] = ""   # ok
 pars1["3CR401.0"] = ""   # ok
 pars1["3CR436.0"] = ""
+pars1["3CR459.0"] = ""
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
@@ -94,7 +99,8 @@ pars2["3CR357.0"] = "srdp=1 admit=0"
 pars2["3CR381.0"] = "srdp=1 admit=0"
 pars2["3CR401.0"] = "srdp=1 admit=0"
 pars2["3CR436.0"] = "srdp=1 admit=0"
+pars2["3CR459.0"] = "srdp=1 admit=0"
 
-# Found 14 sources
+# Found 15 sources
 
 runs.mk_runs(project, on, pars1, pars2)
