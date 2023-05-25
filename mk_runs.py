@@ -81,7 +81,7 @@ pars1["3CR349.0"] = ""   # ok
 pars1["3CR357.0"] = ""   # ok
 pars1["3CR381.0"] = ""   # ok
 pars1["3CR401.0"] = "shortlags=32,10.0"   # continuum *DS*
-pars1["3CR436.0"] = ""
+pars1["3CR436.0"] = "shortlags=32,10.0"   # weak continuum *DS*
 pars1["3CR459.0"] = "shortlags=32,10.0"   # continuum *DS*
 
 #        common parameters per source on subsequent runs (run1b, run2b)
