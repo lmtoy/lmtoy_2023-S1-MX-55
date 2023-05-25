@@ -70,19 +70,19 @@ on["3CR459.0"] =  [ 109093, 109094, 109095,                                     
 pars1 = {}
 pars1["3CR123.0"] = "shortlags=32,15.0"   # strong continuum
 pars1["3CR135.0"] = ""   # ok
-pars1["3CR219.0"] = ""   # ok
+pars1["3CR219.0"] = "shortlags=32,10.0"   # continuum *DS*
 pars1["3CR234.0"] = ""   # ok
 pars1["3CR236.0"] = "shortlags=32,15.0"   # strong continuum
 pars1["3CR287.1"] = "shortlags=32,15.0"   # strong continuum [bench 105323-105325]
 pars1["3CR303.0"] = "shortlags=32,15.0"   # strong continuum
 pars1["3CR319.0"] = ""   # ok
-pars1["3CR332.0"] = ""
+pars1["3CR332.0"] = "shortlags=32,10.0"   # weak continuum *DS*
 pars1["3CR349.0"] = ""   # ok
 pars1["3CR357.0"] = ""   # ok
 pars1["3CR381.0"] = ""   # ok
-pars1["3CR401.0"] = ""   # ok
+pars1["3CR401.0"] = "shortlags=32,10.0"   # continuum *DS*
 pars1["3CR436.0"] = ""
-pars1["3CR459.0"] = ""
+pars1["3CR459.0"] = "shortlags=32,10.0"   # continuum *DS*
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
