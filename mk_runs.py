@@ -29,7 +29,7 @@ on["3CR234.0"] = [ 105304, 105305, 105306, 105308, 105309, 105310, 105312, 10531
 on["3CR236.0"] = [ 106727, 106728, 106729, 106731, 106732, 106733, 106735, 106736,
                    106737, 106739, 106740, 106741,]                                 # mar 11/12
 
-on["3CR287.1"] = [ 105324, 105325, 105326, 105328, 105329, 105330, 105332, 105333,
+on["3CR287.1"] = [ -105324, -105325, -105326, -105328, -105329, -105330, 105332, 105333,
                    105334, 105336, 105337, 105338,]                                  # 10-feb
 
 on["3CR303.0"] = [ 107409, 107410, 107411, 107413, 107414, 107415, 107417, 107418,
@@ -68,20 +68,20 @@ on["3CR459.0"] =  [ 109093, 109094, 109095,                                     
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1["3CR123.0"] = "shortlags=32,15.0"   # strong continuum
-pars1["3CR135.0"] = ""   # ok
-pars1["3CR219.0"] = "shortlags=32,15.0"   # continuum *DS*
-pars1["3CR234.0"] = ""   # ok
-pars1["3CR236.0"] = "shortlags=32,15.0"   # strong continuum
+pars1["3CR123.0"] = "shortlags=32,15.0 badcb=0/2,3/3"   # strong continuum
+pars1["3CR135.0"] = "badcb=3/4"   # ok
+pars1["3CR219.0"] = "shortlags=32,15.0 badcb=3/3"   # continuum *DS*
+pars1["3CR234.0"] = "badcb=3/3"   # ok
+pars1["3CR236.0"] = "shortlags=32,15.0 badcb=0/2,2/3,3/3,3/4"   # strong continuum
 pars1["3CR287.1"] = "shortlags=32,15.0"   # strong continuum [bench 105323-105325]
-pars1["3CR303.0"] = "shortlags=32,15.0"   # strong continuum
-pars1["3CR319.0"] = ""   # ok
+pars1["3CR303.0"] = "shortlags=32,15.0 badcb=2/3,3/4"   # strong continuum
+pars1["3CR319.0"] = "badcb=3/4"   # ok
 pars1["3CR332.0"] = "shortlags=32,10.0"   # weak continuum *DS*
-pars1["3CR349.0"] = "shortlags=32,10.0"   # weak 
+pars1["3CR349.0"] = "shortlags=32,10.0 badcb=3/3,3/4"   # weak 
 pars1["3CR357.0"] = "shortlags=32,10.0"   # weak 
-pars1["3CR381.0"] = "shortlags=32,10.0"   # weak 
-pars1["3CR401.0"] = "shortlags=32,15.0"   # continuum *DS*
-pars1["3CR436.0"] = "shortlags=32,10.0"   # weak continuum *DS*
+pars1["3CR381.0"] = "shortlags=32,10.0 badcb=3/4"   # weak 
+pars1["3CR401.0"] = "shortlags=32,15.0 badcb=3/3"   # continuum *DS*
+pars1["3CR436.0"] = "shortlags=32,10.0 badcb=3/3"   # weak continuum *DS*
 pars1["3CR459.0"] = "shortlags=32,15.0"   # continuum *DS*
 
 #        common parameters per source on subsequent runs (run1b, run2b)
@@ -104,5 +104,4 @@ pars2["3CR459.0"] = "srdp=1 admit=0"
 
 # Found 15 sources
 
-if __name__ == '__main__':    
-    runs.mk_runs(project, on, pars1, pars2, sys.argv)
+runs.mk_runs(project, on, pars1, pars2)

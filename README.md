@@ -23,4 +23,6 @@ noted, their slopes are all such that flux is less at highest frequency.
      3CR381.0   weak     1   - 2
      3CR401.0   strong   10 - 24
      3CR436.0   weak     4-6          varying
-     3CR459.0   strong   8 - 20       
+     3CR459.0   strong   8 - 20
+
+QA notes: Many obsnums are techincally QAFAILS due to RMS > 1.4. However, due to the continuum contamination in most of the sources, I have ignored this RMS cutoff; the sources marked as QAFAILS are bad regardless of RMS.        
