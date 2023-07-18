@@ -1,23 +1,23 @@
 #  <obsnum>   <comment>     # <SLpipeline args>
-106007  strong continuum
-106727  strong continuum
-105324  strong continuum
+105324 QAFAIL
+105325 QAFAIL
+105326 QAFAIL
+105328 QAFAIL
+105329 QAFAIL
+105330 QAFAIL
 
-107459 bad?
-
-
-106007_106163 3CR123 strong continuum
-106524_107299 3CR135 weak continuum
-106691_106707 3CR219 strong continuum
-105304_105410 3CR234 weak continuum
-106727_106741 3CR236 strong continuum
-105324_105338 3CR287 strong continuum
-107409_107424 3CR303 strong continuum
-107427_107442 3CR319 no continuum?
-108952_108967 3CR332 weak continuum
-106884_106981 3CR349 weak continuum
-106984_107136 3CR357 weak continuum
-107445_108850 3CR381 weak continuum
-106994_107149 3CR401  strong continuum
-108865_109086 3CR436 weak continuum
-109093_109216 3CR459 strong continuum
+106007_106163 3CR123 No detection; strong continuum
+106524_107299 3CR135 No detection; weak continuum
+106691_106707 3CR219 No detection; strong continuum
+105304_105410 3CR234 No detection; weak continuum
+106727_106741 3CR236 No detection; strong continuum
+105324_105338 3CR287 No detection; strong continuum
+107409_107424 3CR303 No detection; strong continuum
+107427_107442 3CR319 No detection; no continuum?
+108952_108967 3CR332 No detection; weak continuum
+106884_106981 3CR349 No detection; weak continuum
+106984_107136 3CR357 No detection; weak continuum
+107445_108850 3CR381 No detection; weak continuum
+106994_107149 3CR401 No detection; strong continuum
+108865_109086 3CR436 No detection; weak continuum
+109093_109216 3CR459 No detection; strong continuum
