@@ -11,7 +11,7 @@
 106691_106707 3CR219 No detection; strong continuum
 105304_105410 3CR234 No detection; weak continuum
 106727_106741 3CR236 No detection; strong continuum
-105324_105338 3CR287 No detection; strong continuum
+105332_105338 3CR287 No detection; strong continuum
 107409_107424 3CR303 No detection; strong continuum
 107427_107442 3CR319 No detection; no continuum?
 108952_108967 3CR332 No detection; weak continuum
